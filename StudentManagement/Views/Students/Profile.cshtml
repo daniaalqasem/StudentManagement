@@ -1,0 +1,41 @@
+﻿@model StudentManagement.Models.Student
+
+<div class="container mt-5">
+    <div class="card shadow-lg" style="max-width: 600px; margin:auto;">
+        <div class="card-header bg-primary text-white text-center">
+            <h3>📖 الملف الشخصي للطالب</h3>
+        </div>
+        <div class="card-body">
+            @if (Model != null)
+            {
+                <table class="table table-borderless">
+                    <tr>
+                        <th style="width: 30%;">👤 الاسم:</th>
+                        <td>@Model.FullName</td>
+                    </tr>
+                    <tr>
+                        <th>📧 البريد الإلكتروني:</th>
+                        <td>@Model.Email</td>
+                    </tr>
+                    <tr>
+                        <th>🎓 رقم الطالب:</th>
+                        <td>@Model.Id</td>
+                    </tr>
+                </table>
+
+                <div class="text-center mt-4">
+                    <a href="/Courses/Index" class="btn btn-success btn-lg mx-2">
+                        ➕ تسجيل المواد
+                    </a>
+                    <a href="/Courses/RegisteredCourses" class="btn btn-info btn-lg mx-2">
+                        📚 المواد المسجلة
+                    </a>
+                </div>
+            }
+            else
+            {
+                <p class="text-danger text-center">لا يوجد بيانات لهذا الحساب.</p>
+            }
+        </div>
+    </div>
+</div>

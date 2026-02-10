@@ -1,0 +1,52 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', sans-serif;
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* بالنص أفقي */
+    align-items: center; /* بالنص عمودي */
+    
+}
+
+
+
+.register-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: center;
+    margin: 0 auto; /* يخلي العنصر بالنص أفقي */
+}
+
+    .register-box h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .register-box input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    .register-box button {
+        width: 100%;
+        padding: 12px;
+        background: #5873ed;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .register-box button:hover {
+            background: #3f5bd6;
+        }

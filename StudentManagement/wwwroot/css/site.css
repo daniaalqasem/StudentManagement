@@ -1,0 +1,75 @@
+﻿html {
+  font-size: 14px;
+}
+/*يحدد حجم الخط الأساسي لكل الصفحة (14px).*/
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+/*هذا media query: إذا عرض الشاشة أكبر من 768px (مثل اللابتوب)، يكبر الخط الأساسي ليصير 16px.*/
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+/*هاي أسماء CSS selectors مأخوذة من Bootstrap framework (المكتبة اللي بتستخدميها للتصميم).*/
+
+html {
+    position: relative;
+    min-height: 100%;
+   
+}
+/*relative: العنصر يبقى في مكانه الطبيعي، لكنه يصبح مرجع للعناصر داخله.
+→ إذا حطيت عنصر داخله بـ absolute، رح يتموضع بالنسبة له.
+
+absolute: العنصر يتموضع بالنسبة لأقرب أب عنده position: relative.
+→ إذا ما فيه أب نسبي، يتموضع بالنسبة للصفحة كلها.
+
+fixed: العنصر يظل مثبت في مكانه بالنسبة للشاشة، حتى لو المستخدم نزل بالصفحة (scroll).
+→ مثال: Navbar ثابت فوق الشاشة.
+
+   position: =absolute. والfixed:لازم يكون الاب  position: relative; عشين استخدم ال
+
+
+*/
+
+body {
+    margin: 0;
+    /*يزيل الهوامش الافتراضية للـ body (حتى الصفحة تبدأ من أعلى بدون فراغ).*/
+}
+
+.khoudori {
+    background-image: url('/images/khoudori.jpg'); /* الصورة */
+    background-size: cover; /* تغطي كامل الشاشة */
+    background-position: center; /* توسيط الصورة */
+    width: 100vw; /* عرض الشاشة بالكامل */
+    height: 100vh; /* ارتفاع الشاشة بالكامل */
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+
+.login {
+    padding: 10px 30px 10px 30px;
+    margin-left: 30px;
+    margin-top: 70px;
+    color: white;
+    background: #484cb9;
+    border-radius: 5px;
+    border-color: #484cb9;
+}
+.Register {
+    padding: 10px 30px 10px 30px;
+    margin-left: 30px;
+    margin-top: 70px;
+    color: white;
+    background: #484cb9;
+    border-radius: 5px;
+    border-color: #484cb9;
+}
+
+
